@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo IIT.png" width="150" height="100">
+        <h1>Université Nord Americane Privée: Institut International De Technologies "IIT" </h1>
+        <img src="../images/campus.jfif" width="1200" height="300">
+        <nav>
+            <a href="../index.html">Actualite </a> &nbsp; &nbsp; &nbsp;
+            <a href="inscription.html">Inscription</a> &nbsp; &nbsp; &nbsp;
+            <a href="galerie.html">Galerie</a>
+        </nav>
+    </header>
+    <main>
+        <form action="/soumettre" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Inscription</legend>
+                <table>
+                    <tr>
+                        <td>Nom :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Prenom :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Naissance :</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Sexe :</td>
+                        <td> <input type="radio" name="gendre">Homme
+                            <input type="radio" name="gendre">Femme
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>pays</td>
+                        <td><select id="pays" name="pays" required>
+                                <option selected disabled>--Sélectionnez un pays--</option>
+                                <option>France</option>
+                                <option>Tunisie</option>
+                                <option>Allemagne</option>
+                                <option>Espagne</option>
+                                <option>Italie</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>langues:</td>
+                        <td><input type="checkbox" id="arabe" name="langue" value="arabe">Arabe<br>
+                            <input type="checkbox" id="francais" name="langue" value="francais">
+                            Français<br>
+                            <input type="checkbox" id="anglais" name="langue" value="anglais">
+                            Anglais
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fichier">Choisissez un fichier :</label><br></td>
+                        <td><input type="file" id="fichier" name="fichier" required></td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p> Route Mharza klm 1.5 ,sfax<br> Tél:+216 74 465 020 <br> Mail:contact.iit@iit.tn</p>
+    </footer>
+</body>
+
+</html>
